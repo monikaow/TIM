@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_my_visits"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_my_visits" />
+
+    <item
+        android:id="@+id/navigation_my_recipes"
+        android:icon="@drawable/ic_featured_play_list_black_24dp"
+        android:title="@string/title_my_recipes" />
+    <item
+        android:id="@+id/navigation_reservation"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="Umów wizytę" />
+
+</menu>

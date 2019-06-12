@@ -1,0 +1,7 @@
+*.iml
+.idea
+commons/target/
+backend/target/
+domain/target/
+web/target/
+*.log

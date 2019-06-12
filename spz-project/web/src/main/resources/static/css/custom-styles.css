@@ -1,0 +1,61 @@
+body[mode="1"] .v-toolbar_mode {
+    background-color: #a8e0ff !important;
+    border-color: #a8e0ff !important;
+}
+
+body[mode="2"] .v-toolbar_mode {
+    background-color: #dcedc8 !important;
+    border-color: #dcedc8 !important;
+}
+body[mode="3"] .v-toolbar_mode {
+    background-color: #ffcdd2 !important;
+    border-color: #ffcdd2 !important;
+}
+
+/*******************************/
+
+body[mode="1"] .v-footer_mode {
+    background-color: #a8e0ff !important;
+    border-color: #a8e0ff !important;
+}
+
+body[mode="2"] .v-footer_mode {
+    background-color: #dcedc8 !important;
+    border-color: #dcedc8 !important;
+}
+body[mode="3"] .v-footer_mode {
+    background-color: #ffcdd2 !important;
+    border-color: #ffcdd2 !important;
+}
+
+/*******************************/
+
+body[mode="1"] .v-footer_action_mode {
+    background-color: #1976d2 !important;
+    border-color: #1976d2 !important;
+}
+
+body[mode="2"] .v-footer_action_mode {
+    background-color: #afb42b !important;
+    border-color: #afb42b !important;
+}
+body[mode="3"] .v-footer_action_mode {
+    background-color: #d32f2f !important;
+    border-color: #d32f2f !important;
+}
+
+/*******************************/
+
+body[mode="1"] .v-content_mode {
+    background-color: #e3f2fd !important;
+    border-color: #e3f2fd !important;
+}
+
+body[mode="2"] .v-content_mode {
+    background-color: #f9fbe7 !important;
+    border-color: #f9fbe7 !important;
+}
+body[mode="3"] .v-content_mode {
+    background-color: #ffebee !important;
+    border-color: #ffebee !important;
+}

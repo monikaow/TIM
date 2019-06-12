@@ -1,0 +1,292 @@
+[do-not-show] {
+    display: none;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+div[do-not-show][v-cloak] {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;}
+
+
+/*Loader 1- Spinning */
+
+div[do-not-show][v-cloak] .loader{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    height: 20vw;
+    width: 20vw;
+    margin: -10vw 0 0 -10vw;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+    border-bottom-color: #3498db;
+    border-radius: 50%;
+    z-index: 2;
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    -o-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+div[do-not-show][v-cloak] .loader:before{
+    content: "";
+    position: absolute;
+    top:2%;
+    bottom: 2%;
+    left: 2%;
+    right: 2%;
+    border: 3px solid transparent;
+    z-index: 2;
+    border-top-color: #db213a;
+    border-radius: 50%;
+    -webkit-animation: spin 3s linear infinite;
+    -moz-animation: spin 3s linear infinite;
+    -o-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+
+}
+
+div[do-not-show][v-cloak] .loader:after{
+    content: "";
+    position: absolute;
+    top:5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    border: 3px solid transparent;
+    border-top-color: #dec52d;
+    z-index: 2;
+    border-radius: 50%;
+    -webkit-animation: spin 1.5s linear infinite;
+    -moz-animation: spin 1.5s linear infinite;
+    -o-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+
+}
+
+/*Keyframes for spin animation */
+
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    50% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(180deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+
+@-moz-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    50% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(180deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+@-o-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    50% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(180deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    50% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(180deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+.one-line-block {
+    display: flex;
+}
+
+.no-flex-wrap {
+    flex-wrap: nowrap !important;
+}
+
+.one-line-block-center {
+    display: flex;
+    align-items: center;
+}
+
+.one-line-block-top {
+    display: flex;
+    align-items: start;
+}
+
+.v-dialog.centered-dialog {
+    background: white;
+    box-shadow: none;
+    border-radius: 6px;
+    width: auto;
+    color: rgb(2, 0, 50);
+}
+
+.v-list > div .v-list__tile__action__hover {
+    display: none;
+    min-width: 44px;
+}
+
+.v-list > div:hover .v-list__tile__action__hover {
+    display: flex;
+}
+
+.v-timeline div.v-timeline-item .v-timeline__action__hover {
+    display: none;
+}
+
+.v-timeline div.v-timeline-item:hover .v-timeline__action__hover {
+    display: flex;
+}
+
+html {
+    overflow-y: scroll !important;
+}
+
+.v-menu__content::-webkit-scrollbar {
+    background: white;
+    height: 8px;
+    width: 8px;
+}
+
+.v-menu__content::-webkit-scrollbar-thumb {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #ddd;
+}
+
+.v-list__tile__small .v-list__tile.v-list__tile--link {
+    height: 30px;
+}
+
+.v-footer {
+    min-height: 32px !important;
+}
+
+.additional-to-label {
+    color: rgba(0, 0, 0, 0.54);
+    margin-bottom: 8px;
+}
+
+.conf-color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid lightgrey;
+    position: absolute;
+}
+
+.v-stepper--vertical .v-stepper__content {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.v-list--three-line .v-list__tile {
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+table.v-table thead td:not(:nth-child(1)),
+table.v-table tbody td:not(:nth-child(1)),
+table.v-table thead th:not(:nth-child(1)),
+table.v-table tbody th:not(:nth-child(1)),
+table.v-table thead td:first-child,
+table.v-table tbody td:first-child,
+table.v-table thead th:first-child,
+table.v-table tbody th:first-child {
+    padding: 0 14px;
+}
+
+table.v-table thead tr,
+table.v-table tfoot tr {
+    height: 36px;
+}
+
+table.v-table tbody td,
+table.v-table tbody th {
+    height: 36px;
+}
+
+table.v-table tfoot tr td {
+    padding: 0 14px;
+}
+
+.auto {
+    margin: auto;
+}
+
+.v-input--selection-controls .v-input__control {
+    flex-grow: 0;
+    width: 100%;
+}
+
+.v-list--three-line .v-list__tile {
+    height: auto;
+    padding-top: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-bottom: 1rem;
+}
+
+.half-transparent {
+    background: rgba(250, 250, 250, 0.85) !important;
+}
+
+.height-100 {
+    height: 100%;
+}
